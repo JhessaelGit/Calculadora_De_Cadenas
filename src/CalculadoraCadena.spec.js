@@ -15,5 +15,8 @@ describe("Calculadora de cadenas", () => {
   it("deberia calcular la suma de los caracteres 1-2,3", () => {
     expect(calculadora.calcularCadena("1-2,3")).toEqual(6);
   });
+  it("deberia calcular la suma de los caracteres //[;] 6;7;4", () => {
+    expect(calculadora.calcularCadena("[;] 6;7;4")).toEqual(17);
+  });
   
 });
