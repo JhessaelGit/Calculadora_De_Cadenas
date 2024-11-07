@@ -1,6 +1,14 @@
 class CalcularCadena {
   calcularCadena(cadena) {
-    return 6;
+    let suma = 0;
+    let tamanioCadena=cadena.length
+    for (let i = 0; i <= tamanioCadena; i++) {
+      let caracter = cadena.charAt(i);
+      if (!isNaN(caracter) && caracter !== " ") {
+        suma = suma + Number(caracter);
+      }
+    }
+    return suma;
   }
 }
 
