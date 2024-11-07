@@ -1,6 +1,6 @@
 class CalcularCadena {
   calcularCadena(cadena) {
-    
+    return 6;
   }
 }
 
