@@ -24,4 +24,11 @@ describe("Calculadora de cadenas", () => {
   it("deberia Ignorar los numeros mayores a 1000 y retornar 2", () => {
     expect(calculadora.calcularCadena("2,1001")).toEqual(2);
   });
+
+  it("deberia calcular la suma de los caracteres //[***] 1***2***3", () => {
+    expect(calculadora.calcularCadena("[***] 1***2***3")).toEqual(6);
+  });
+  it("deberia calcular la suma de los caracteres //[*][%] 1*2%3,7-9", () => {
+    expect(calculadora.calcularCadena("//[*][%] 1*2%3,7-9")).toEqual(22);
+  });
 });
