@@ -1,15 +1,12 @@
-import sumar from "./sumador";
-
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
+import CalcularCadena from "./CalculadoraCadena";
+const cadenaCaracteres = document.querySelector("#CadenaNumeros");
 const form = document.querySelector("#sumar-form");
 const div = document.querySelector("#resultado-div");
-
+const calculadora=new CalcularCadena()
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
+  const cadena = cadenaCaracteres.value;
 
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+  div.innerHTML = "<p>" + calculadora.calcularCadena(cadena) + "</p>";
 });
