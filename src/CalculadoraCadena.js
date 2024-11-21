@@ -1,32 +1,32 @@
 class CalcularCadena {
     optenerArrayDeNumerosDeUnaCadena(cadena)
     {
-        let numeros=[];
-        let numero=0;
+        let ArrayNumeros=[];
+        let numeroOptenido=0;
         for(let i=0;i<cadena.length;i++)
         {
             let caracter=cadena.charAt(i);
-            console.log("fuera del while ",numero)
+            console.log("fuera del while ",numeroOptenido)
             while((!isNaN(caracter) && caracter !== " " && i<cadena.length))
             {
-                numero=numero*10+Number(caracter);
+                numeroOptenido=numeroOptenido*10+Number(caracter);
                 i++;
                 caracter=cadena.charAt(i)
-                console.log("hola", numero, Number(caracter))
+                console.log("hola", numeroOptenido, Number(caracter))
             }
-            numeros.push(numero)
-            numero=0;
+            ArrayNumeros.push(numeroOptenido)
+            numeroOptenido=0;
         }
-        return numeros;
+        return ArrayNumeros;
     }
   calcularSumaDeNumerosEnLaCadena(cadena) {
     let suma=0;
-    let numeros=this.optenerArrayDeNumerosDeUnaCadena(cadena);
-    for(let i=0;i<numeros.length;i++)
+    let ArrayNumerosDeLaCadena=this.optenerArrayDeNumerosDeUnaCadena(cadena);
+    for(let i=0;i<ArrayNumerosDeLaCadena.length;i++)
     {
-        if(numeros[i]<=1000)
+        if(ArrayNumerosDeLaCadena[i]<=1000)
         {
-            suma=suma+numeros[i]
+            suma=suma+ArrayNumerosDeLaCadena[i]
         }
     }
     return suma;
