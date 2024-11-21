@@ -6,13 +6,20 @@ class CalcularCadena {
         for(let i=0;i<cadena.length;i++)
         {
             let caracter=cadena.charAt(i);
-            console.log("fuera del while ",numeroOptenido)
-            while((!isNaN(caracter) && caracter !== " " && i<cadena.length))
+            let EsUnNumero=!isNaN(caracter)
+            let ElCaracterNoEstaVacio=caracter !== " "
+            let laPocicionEsMenorQueElTamanioDeLaCadena=i<cadena.length
+
+            while((EsUnNumero && ElCaracterNoEstaVacio && laPocicionEsMenorQueElTamanioDeLaCadena))
             {
                 numeroOptenido=numeroOptenido*10+Number(caracter);
+                //variables cambiando
                 i++;
                 caracter=cadena.charAt(i)
-                console.log("hola", numeroOptenido, Number(caracter))
+                //condicionales
+                ElCaracterNoEstaVacio=caracter !== " "
+                EsUnNumero=!isNaN(caracter)
+                laPocicionEsMenorQueElTamanioDeLaCadena=i<cadena.length
             }
             ArrayNumeros.push(numeroOptenido)
             numeroOptenido=0;
