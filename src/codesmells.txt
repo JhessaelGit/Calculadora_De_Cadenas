@@ -1,0 +1,4 @@
+en la clase calcular dadena
+-La funcion optener numeros no deja en claro que esta opteniendo un array
+-La variable numeros no deja tan en claro que es un array
+OK-El nombre Calcular Cadena no explica que exactamente calcula la funcion

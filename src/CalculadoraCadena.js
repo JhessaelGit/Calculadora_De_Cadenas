@@ -19,7 +19,7 @@ class CalcularCadena {
         }
         return numeros;
     }
-  calcularCadena(cadena) {
+  calcularSumaDeNumerosEnLaCadena(cadena) {
     let suma=0;
     let numeros=this.optenerNumeros(cadena);
     for(let i=0;i<numeros.length;i++)
