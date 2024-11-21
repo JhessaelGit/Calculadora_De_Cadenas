@@ -1,5 +1,5 @@
 class CalcularCadena {
-    optenerNumeros(cadena)
+    optenerArrayDeNumerosDeUnaCadena(cadena)
     {
         let numeros=[];
         let numero=0;
@@ -21,7 +21,7 @@ class CalcularCadena {
     }
   calcularSumaDeNumerosEnLaCadena(cadena) {
     let suma=0;
-    let numeros=this.optenerNumeros(cadena);
+    let numeros=this.optenerArrayDeNumerosDeUnaCadena(cadena);
     for(let i=0;i<numeros.length;i++)
     {
         if(numeros[i]<=1000)
