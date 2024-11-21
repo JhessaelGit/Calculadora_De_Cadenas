@@ -8,5 +8,5 @@ form.addEventListener("submit", (event) => {
 
   const cadena = cadenaCaracteres.value;
 
-  div.innerHTML = "<p>" + calculadora.calcularCadena(cadena) + "</p>";
+  div.innerHTML = "<p>" + calculadora.calcularSumaDeNumerosEnLaCadena(cadena) + "</p>";
 });
